@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
+
+    <script src="/valida-email.js" defer></script>
 </head>
 
 <body>
@@ -154,8 +156,11 @@
             <div class="corpo__footer">
                 <input class="corpo__footer__input" type="email" name="email" id="input__footer"
                     placeholder="Digite seu e-mail">
-                <button href="#" class="corpo__footer__button">Cadastre-se</button>
+
+                <button onclick="validateEmail()" class="corpo__footer__button">Cadastre-se</button>
+
             </div>
+            <p id="message"></p>
             <div class="contato">
                 <div class="contato__links">
                     <h2 class="contato__titulo">Links utéis</h2>
